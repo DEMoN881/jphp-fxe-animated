@@ -1,0 +1,45 @@
+name: jphp-animated
+version: 1.0.0
+
+deps:
+    jphp-runtime: '*'
+    jphp-gui-ext: '*'
+
+devDeps:
+  jphp-core: '*'
+  dn-bundle-plugin: '*'  
+
+config:
+  ignore:
+  - /sandbox/**
+  - /.idea/**
+  - /*.iml
+  - /.git/**
+  - /package.hub.yml
+  - /bundle/**
+  - /src-bundle/**
+  - /build
+  - /out/**
+  - /examples/**
+  - /screenshots/**
+  - /dn-sources/**
+  - /.gitignore
+  - /settings.gradle
+
+gradle:
+  deps:
+    - "eu.iamgio:animated:1.3.0"
+
+develnext-bundle:
+  version: 1.0.3
+  name: jphp-animated
+  author: Demonck
+  icon: "develnext/bundle/animated/icon32.png"
+  description: "Эта библиотека добавляет возможность плавной изменении css темы (Создатели FXEdition), новые компоненты и другое."
+  group: "system"
+  class: "develnext\\bundle\\animated\\Animated"
+
+plugins:
+  - Gradle
+  - Hub
+  - Doc
